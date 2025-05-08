@@ -1,0 +1,50 @@
+<style>
+    .overlay{
+        background-color: pink;
+        padding: 0px;
+        opacity: 0.4;
+        position: absolute;
+        z-index: 0px;
+        height: 100%;
+        width: 100%;
+        display:none;
+    }
+    .popox
+    {
+       background-color: rgb(176, 21, 117);
+       color: white;
+       position: absolute;
+        z-index: 3px;
+        width: 30%;
+        display:none;
+        border-radius: 10px;
+        padding: 20px;
+        left:30%
+
+    }
+</style>
+<button onclick="show()"  style="background-color: pink; color: white;">show</button>
+<div class="overlay"></div>
+<div class="popox">
+    <p>Lorem, ipsum dolor sit am
+        et consectetur adipisicing 
+        elit. Quo repellat, officiis amet corrupti voluptati
+        bus harum? Asperiores laboriosam quas porro aspernatur nostrum. 
+        Doloremque necessitatibus pariatur distinctio, iure eveniet laud
+        antium nisi exercitationem!</p>
+        <button onclick="closepop()">close</button>
+</div>
+
+<script>
+     var overlay=document.querySelector(".overlay")
+     var popox=document.querySelector(".popox")
+
+     function show() {
+        overlay.style.display="block"
+        popox.style.display="block"
+     }
+     function closepop(){
+        overlay.style.display="none"
+        popox.style.display="none"
+     }
+</script>

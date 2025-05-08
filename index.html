@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My journal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1 id="id"> MY JOURNAL</h1>
+    </div>
+    <div class="container">
+        <div class="bookcont">
+            <h2>CHENNAI</h2>
+            <h5>madrasi</h5>
+            <p>Chennai, formerly known as Madras, has a rich history dating back to t
+                he 1st century CE, initially as a fishing village along the Coromandel Coast. 
+                It becam
+                e a significant trading center under various South Ind
+                ian dynasties like the Pallavas, Cholas, and Vijayanagara Empire.</p>
+                <button onclick="deletebook(event)">delete</button>
+        </div>
+        
+    </div>
+    <div class="popup"></div>
+    <div class="popbox">
+        <h2>Add Journal</h2>
+        <form>
+            <input type="text" placeholder="place" id="place-his">
+            <input type="text" placeholder="another name" id="known-his">
+            <textarea placeholder="detail" id="s-detail"></textarea>
+            <button id="addjournal">Add</button>
+            <button id="canceljournal">cancel</button>
+        </form>
+    </div>
+    <button  class="addbutton" id="add-button">+</button>
+    <script src="script.js"></script>
+    
+</body>
